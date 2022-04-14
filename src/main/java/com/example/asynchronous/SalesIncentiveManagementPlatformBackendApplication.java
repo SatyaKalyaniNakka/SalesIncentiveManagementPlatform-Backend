@@ -1,19 +1,15 @@
 package com.example.asynchronous;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.example.asynchronous.model.Admin;
-import com.example.asynchronous.model.CommissionModel;
-import com.example.asynchronous.model.CommissionRules;
-import com.example.asynchronous.model.Products;
 import com.example.asynchronous.model.SalesLine;
-import com.example.asynchronous.model.SalesPerson;
 import com.example.asynchronous.repository.AdminRepository;
 import com.example.asynchronous.repository.CommissionModelRepository;
 import com.example.asynchronous.repository.CommissionRulesRepository;
@@ -94,6 +90,20 @@ public class SalesIncentiveManagementPlatformBackendApplication  implements Comm
 //				new CommissionModel("CVR1", 6),
 //				new CommissionModel("CVR2", 11)
 //				)
-//				);
+	//			);
+//		DateFormat formatter1 = new SimpleDateFormat("dd-MM-yyyy");  
+//		Date d1 = (Date) formatter1.parse("13-04-2022");
+//        SalesLine sl1 =new SalesLine("SL1","P1", "SP1", d1 ,10000.0f, "SP2", 3000.0f );
+//        salesLineRepository.save(sl1);
+//        
+//        DateFormat formatter2 = new SimpleDateFormat("dd-MM-yyyy");  
+//		Date d2 = (Date) formatter2.parse("11-04-2022");
+//        SalesLine sl2 =new SalesLine("SL2","P2", "SP2", d1 ,20000.0f, "SP4", 6000.0f );
+//        salesLineRepository.save(sl2);
+//        
+//        DateFormat formatter3 = new SimpleDateFormat("dd-MM-yyyy");  
+//		Date d3 = (Date) formatter3.parse("13-04-2022");
+//        SalesLine sl3 =new SalesLine("SL3","P3", "SP3", d1 ,25000.0f, "SP2", 8000.0f );
+//       salesLineRepository.save(sl3);
     }
 }

@@ -7,9 +7,12 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.GenericGenerator;
+
 @Entity
 @Table(name="direct_sales_person")
 public class SalesPerson {
+	
 	@Id
 	private String salesPersonId;
 	
@@ -27,8 +30,7 @@ public class SalesPerson {
 	private float uptodateCommission;
 	private String role = "sales";
 	
-	@OneToOne(mappedBy = "salesPersonId")
-	private SalesLine salesLine;
+
 	
 	public SalesPerson(String salesPersonId, String password, String name, String location, int quota, int level,
 			String reportingId, int twoWheelerSold, int threeWheelerSold, int fourWheelerSold, int commercialSold,
